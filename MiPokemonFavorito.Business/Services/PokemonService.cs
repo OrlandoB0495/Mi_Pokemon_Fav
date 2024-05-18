@@ -25,7 +25,7 @@ public class PokemonService
             Name = pokemonName,
             Type = pokemonData.GetProperty("types").EnumerateArray().First().GetProperty("type").GetProperty("name").GetString(),
             SpriteUrl = pokemonData.GetProperty("sprites").GetProperty("front_default").GetString(),
-            Moves = pokemonData.GetProperty("moves").EnumerateArray().Select(m => m.GetProperty("move").GetProperty("name").GetString()).ToList()
+            MovesList = pokemonData.GetProperty("moves").EnumerateArray().Select(m => m.GetProperty("move").GetProperty("name").GetString()).ToList()
         };
 
 
