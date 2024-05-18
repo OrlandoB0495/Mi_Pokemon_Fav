@@ -15,10 +15,10 @@ public class PokemonController : ControllerBase
         _pokemonService = pokemonService;
     }
 
-    [HttpGet("{pokemonName}")]
-    public async Task<ActionResult<Pokemon>> Get(string pokemonName)
+    [HttpGet("{Nombre_Del_Pokemon}")]
+    public async Task<ActionResult<Pokemon>> Get(string Nombre_Del_Pokemon)
     {
-        var pokemon = await _pokemonService.GetFavoritePokemon(pokemonName);
+        var pokemon = await _pokemonService.GetFavoritePokemon(Nombre_Del_Pokemon);
         return Ok(pokemon);
     }
 }

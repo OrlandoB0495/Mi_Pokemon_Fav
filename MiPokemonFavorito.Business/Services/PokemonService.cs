@@ -13,24 +13,23 @@ public class PokemonService
         _client = client;
     }
 
-    public async Task<Pokemon> GetFavoritePokemon(string pokemonName)
+    public async Task<Pokemon> GetFavoritePokemon(string pokeName)
     {
-        var response = await _client.GetAsync($"https://pokeapi.co/api/v2/pokemon/{pokemonName}");
+        var response = await _client.GetAsync($"https://pokeapi.co/api/v2/pokemon/{pokeName}");
         response.EnsureSuccessStatusCode();
 
         var pokemonData = await response.Content.ReadFromJsonAsync<JsonElement>();
 
         var pokemon = new Pokemon
         {
-            Name = pokemonName,
-            Type = pokemonData.GetProperty("types").EnumerateArray().First().GetProperty("type").GetProperty("name").GetString(),
-            SpriteUrl = pokemonData.GetProperty("sprites").GetProperty("front_default").GetString(),
-            MovesList = pokemonData.GetProperty("moves").EnumerateArray().Select(m => m.GetProperty("move").GetProperty("name").GetString()).ToList()
+            Nombre = pokeName,
+            Tipo = pokemonData.GetProperty("types").EnumerateArray().First().GetProperty("type").GetProperty("name").GetString(),
+            Url_Del_Sprite = pokemonData.GetProperty("sprites").GetProperty("front_default").GetString(),
+            Lista_De_Movimientos = pokemonData.GetProperty("moves").EnumerateArray().Select(m => m.GetProperty("move").GetProperty("name").GetString()).ToList()
         };
 
 
         return pokemon;
     }
     
-
 }
