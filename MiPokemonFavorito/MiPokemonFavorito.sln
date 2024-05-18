@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34701.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiPokemonFavorito", "MiPokemonFavorito.csproj", "{3C09323D-CC73-4E46-9C80-7D7995282240}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiPokemonFavorito.Business", "..\MiPokemonFavorito.Business\MiPokemonFavorito.Business.csproj", "{A8384EA9-9711-44DE-BB74-666BAE2250F0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C09323D-CC73-4E46-9C80-7D7995282240}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C09323D-CC73-4E46-9C80-7D7995282240}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C09323D-CC73-4E46-9C80-7D7995282240}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C09323D-CC73-4E46-9C80-7D7995282240}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8384EA9-9711-44DE-BB74-666BAE2250F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8384EA9-9711-44DE-BB74-666BAE2250F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8384EA9-9711-44DE-BB74-666BAE2250F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8384EA9-9711-44DE-BB74-666BAE2250F0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0F1AFE30-C0EC-4CCD-A26A-55FC6F5872CB}
+	EndGlobalSection
+EndGlobal
