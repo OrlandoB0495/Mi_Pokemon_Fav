@@ -1,4 +1,4 @@
-﻿namespace MiPokemonFavorito.Business.Services.Pok;
+﻿namespace MiPokemonFavorito.Business.Services.Pokemones;
 
 public class Pokemon
 {

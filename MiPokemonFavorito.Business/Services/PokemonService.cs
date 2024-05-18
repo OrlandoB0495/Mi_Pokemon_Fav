@@ -1,4 +1,4 @@
-﻿using MiPokemonFavorito.Business.Services.Pok;
+﻿using MiPokemonFavorito.Business.Services.Pokemones;
 using System.Net.Http.Json;
 using System.Text.Json;
 

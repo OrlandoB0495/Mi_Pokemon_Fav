@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MiPokemonFavorito.Business.Services;
-using MiPokemonFavorito.Business.Services.Pok;
+using MiPokemonFavorito.Business.Services.Pokemones;
 
 namespace MiPokemonFavorito.Controllers;
 
