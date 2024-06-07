@@ -18,7 +18,7 @@ public class PokemonController : ControllerBase
     [HttpGet("{Nombre_Del_Pokemon}")]
     public async Task<ActionResult<Pokemon>> Get(string Nombre_Del_Pokemon)
     {
-        var pokemon = await _pokemonService.GetFavoritePokemon(Nombre_Del_Pokemon);
+        var pokemon = await _pokemonService.GetFavoritePokemon(Nombre_Del_Pokemon.ToLower());
         return Ok(pokemon);
     }
 }
